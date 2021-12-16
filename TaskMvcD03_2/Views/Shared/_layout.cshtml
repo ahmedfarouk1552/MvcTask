@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.title</title>
+</head>
+<body>
+    <div>
+        @Html.ActionLink("Index", "index", "Task")<br />
+        @Html.ActionLink("About", "about", "Task")<br />
+        @Html.ActionLink("Test", "test", "Task")<br />
+        @Html.ActionLink("Add", "add", "Task")<br />
+        @Html.ActionLink("contact us", "contactus", "Task")
+        <div>
+            @RenderBody();
+        </div>
+    </div>
+</body>
+</html>
